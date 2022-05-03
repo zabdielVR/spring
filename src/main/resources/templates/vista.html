@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Proveedores</title>
+</head>
+<body>
+
+<div class="container">
+    <hr>
+
+    <ul class="navbar-nav">
+
+        <li class="nav-item d-none d-sm-inline-block">
+
+            <a th:href="@{/}" class="nav-link">Home</a>
+
+
+        </li>
+    </ul>
+    <hr>
+    <h3>Detalle compras</h3>
+
+    <table class="table table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Fecha</th>
+            <th scope="col">ID orden Compra</th>
+            <th scope="col">Nombre Categoria</th>
+            <th scope="col">Costo unitario</th>
+            <th scope="col">Total</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${vwDetalleCompras}">
+            <td th:text="${item.getFecha()}">Mostrar x</td>
+            <td th:text="${item.getIdOrdenCompra()}">Mostrar y</td>
+            <td th:text="${item.getCategoria()}">Mostrar z</td>
+            <td th:text="${item.getCostoUnitario()}">Mostrar z</td>
+            <td th:text="${item.getTotal()}">Mostrar z</td>
+
+            <td>
+
+            </td>
+        </tbody>
+    </table>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

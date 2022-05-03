@@ -1,0 +1,3572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0139)http://192.168.1.93/phpMyAdmin/index.php?route=/database/data-dictionary&db=punto_de_venta&goto=index.php%3Froute%3D%2Fdatabase%2Fstructure -->
+<html lang="es" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link rel="icon" href="http://192.168.1.93/phpMyAdmin/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://192.168.1.93/phpMyAdmin/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="./Vista de impresión - phpMyAdmin 5.1.1_files/print.css">
+    <title>Diccionario</title>
+    <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery.min.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery-migrate.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/sprintf.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/ajax.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/keyhandler.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/bootstrap.bundle.min.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery-ui.min.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/js.cookie.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery.mousewheel.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery.validate.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery-ui-timepicker-addon.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery.ba-hashchange-2.0.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/jquery.debounce-1.0.6.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/menu_resizer.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/cross_framing_protection.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/rte.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/tracekit.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/error_report.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/messages.php"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/config.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/doclinks.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/functions.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/navigation.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/indexes.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/common.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/page_settings.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/drag_drop_import.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/shortcuts_handler.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/codemirror.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/sql.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/runmode.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/show-hint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/sql-hint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/lint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/sql-lint.js.descarga"></script>
+  <script data-cfasync="false" type="text/javascript" src="./Vista de impresión - phpMyAdmin 5.1.1_files/console.js.descarga"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var firstDayOfCalendar = '0';
+var themeImagePath = '.\/themes\/pmahomme\/img\/';
+var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
+var maxInputVars = 1000;
+
+if ($.datepicker) {
+  $.datepicker.regional[''].closeText = 'Terminado';
+  $.datepicker.regional[''].prevText = 'Prev';
+  $.datepicker.regional[''].nextText = 'Next';
+  $.datepicker.regional[''].currentText = 'Hoy';
+  $.datepicker.regional[''].monthNames = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ];
+  $.datepicker.regional[''].monthNamesShort = [
+    'Ene',
+    'Feb',
+    'Mar',
+    'Abr',
+    'Mayo',
+    'Jun',
+    'Jul',
+    'Ago',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dic',
+  ];
+  $.datepicker.regional[''].dayNames = [
+    'Domingo',
+    'Lunes',
+    'Martes',
+    'Mi\u00E9rcoles',
+    'Jueves',
+    'Viernes',
+    'S\u00E1bado',
+  ];
+  $.datepicker.regional[''].dayNamesShort = [
+    'Dom',
+    'Lun',
+    'Mar',
+    'Mie',
+    'Jue',
+    'Vie',
+    'Sab',
+  ];
+  $.datepicker.regional[''].dayNamesMin = [
+    'Do',
+    'Lu',
+    'Ma',
+    'Mi',
+    'Ju',
+    'Vi',
+    'Sa',
+  ];
+  $.datepicker.regional[''].weekHeader = 'Sem';
+  $.datepicker.regional[''].showMonthAfterYear = true;
+  $.datepicker.regional[''].yearSuffix = '';
+  $.extend($.datepicker._defaults, $.datepicker.regional['']);
+}
+
+if ($.timepicker) {
+  $.timepicker.regional[''].timeText = 'Tiempo';
+  $.timepicker.regional[''].hourText = 'Hora';
+  $.timepicker.regional[''].minuteText = 'Minuto';
+  $.timepicker.regional[''].secondText = 'Segundo';
+  $.extend($.timepicker._defaults, $.timepicker.regional['']);
+}
+
+function extendingValidatorMessages () {
+  $.extend($.validator.messages, {
+    required: 'Este\u0020campo\u0020es\u0020requerido',
+    remote: 'Corrige\u0020este\u0020campo',
+    email: 'Ingrese\u0020un\u0020correo\u0020electr\u00F3nico\u0020v\u00E1lido',
+    url: 'Ingrese\u0020una\u0020URL\u0020v\u00E1lida',
+    date: 'Ingrese\u0020una\u0020fecha\u0020v\u00E1lida',
+    dateISO: 'Ingrese\u0020una\u0020fecha\u0020\u0028\u0020ISO\u0020\u0029\u0020v\u00E1lida',
+    number: 'Ingrese\u0020un\u0020n\u00FAmero\u0020v\u00E1lido',
+    creditcard: 'Ingrese\u0020un\u0020n\u00FAmero\u0020de\u0020tarjeta\u0020de\u0020cr\u00E9dito\u0020valido',
+    digits: 'Ingrese\u0020solo\u0020d\u00EDgitos',
+    equalTo: 'Ingrese\u0020el\u0020mismo\u0020valor\u0020de\u0020nuevo',
+    maxlength: $.validator.format('Ingrese\u0020no\u0020m\u00E1s\u0020de\u0020\u007B0\u007D\u0020caracteres'),
+    minlength: $.validator.format('Ingrese\u0020al\u0020menos\u0020\u007B0\u007D\u0020caracteres'),
+    rangelength: $.validator.format('Ingrese\u0020un\u0020valor\u0020entre\u0020\u007B0\u007D\u0020y\u0020\u007B1\u007D\u0020caracteres\u0020de\u0020largo'),
+    range: $.validator.format('Ingrese\u0020un\u0020valor\u0020entre\u0020\u007B0\u007D\u0020y\u0020\u007B1\u007D'),
+    max: $.validator.format('Ingrese\u0020un\u0020valor\u0020menor\u0020o\u0020igual\u0020a\u0020\u007B0\u007D'),
+    min: $.validator.format('Ingrese\u0020un\u0020valor\u0020mayor\u0020o\u0020igual\u0020a\u0020\u007B0\u007D'),
+    validationFunctionForDateTime: $.validator.format('Ingrese\u0020una\u0020fecha\u0020u\u0020hora\u0020v\u00E1lida'),
+    validationFunctionForHex: $.validator.format('Ingrese\u0020una\u0020entrada\u0020HEX\u0020v\u00E1lida'),
+    validationFunctionForMd5: $.validator.format('This\u0020column\u0020can\u0020not\u0020contain\u0020a\u002032\u0020chars\u0020value'),
+    validationFunctionForAesDesEncrypt: $.validator.format('These\u0020functions\u0020are\u0020meant\u0020to\u0020return\u0020a\u0020binary\u0020result\u003B\u0020to\u0020avoid\u0020inconsistent\u0020results\u0020you\u0020should\u0020store\u0020it\u0020in\u0020a\u0020BINARY,\u0020VARBINARY,\u0020or\u0020BLOB\u0020column.')
+  });
+}
+
+CommonParams.setAll({common_query:"",opendb_url:"index.php?route=/database/structure",lang:"es",server:"1",table:"",db:"punto_de_venta",token:"2e6470502f5d7c4e39304b6e42223a66",text_dir:"ltr",show_databases_navigation_as_tree:true,pma_text_default_tab:"Examinar",pma_text_left_default_tab:"Estructura",pma_text_left_default_tab2:false,LimitChars:"50",pftext:"P",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpMyAdmin/",arg_separator:"&",PMA_VERSION:"5.1.1",auth_type:"cookie",user:"user_admin"});
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.js', 0)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.mousewheel.js', 0)
+  .add('vendor/jquery/jquery.validate.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.ba-hashchange-2.0.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.6.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('cross_framing_protection.js', 0)
+  .add('rte.js', 1)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+        AJAX.fireOnload('vendor/js.cookie.js');
+                AJAX.fireOnload('menu_resizer.js');
+        AJAX.fireOnload('rte.js');
+      AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+        AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+                    AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+</head>
+<body>
+
+
+<ol class="breadcrumb float-sm-right">
+    <li class="breadcrumb-item"><a th:href="@{/}">Regresar</a></li>
+    <li class="breadcrumb-item active">Home</li>
+</ol>
+
+  
+      <noscript>
+      <div class="alert alert-danger" role="alert">
+  <img src="themes/dot.gif" title="" alt="" class="icon ic_s_error"> ¡Pasado este punto, debe tener Javascript activado!
+</div>
+
+    </noscript>
+  
+  
+  
+
+  <div id="page_content">
+    
+
+    <hr>
+<h1>Diccionario punto de venta</h1>
+      <h2>Base de datos relacional</h2>
+      <br>
+      <br>
+      <hr>
+
+<div>
+      <div>
+      <h2>categorias_envios</h2>
+      
+      <table class="table table-striped">
+      <thead class="thead-dark">
+        <tbody><tr>
+          <th scope="col">Columna</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Nulo</th>
+          <th scope="col">Predeterminado</th>
+                    <th scope="col">Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id_envios
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria envios</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_categoria
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                        <td>Tipificación de la categoria</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th scope="col">Nombre de la clave</th>
+                <th scope="col">Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      id_envios
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>categorias_productos</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idcategorias_productos
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria  </td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_categoria
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Tipificación de la categoria </td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idcategorias_productos
+                                          </td>
+                    <td>9</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>clientes</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+
+          <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idclientes
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre del cliente</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              apellido_paterno
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>apellido paterno</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              apellido_materno
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>apellido materno cliente</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha_nacimiento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Fecha de nacimiento</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_calle
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre calle</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Genero
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Genero FMB</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              roles_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea roles</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              CP_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>llave foranea cp</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              paises_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>llave foránea paises</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idclientes
+                                          </td>
+                    <td>11</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_clientes_roles1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      roles_id_fk
+                                          </td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_clientes_CP1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      CP_id_fk
+                                          </td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_clientes_paises1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      paises_id_fk
+                                          </td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>cotizaciones</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idcotizaciones
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Fecha de cotización</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              vigencia
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Vigencia de la cotización</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              cantidad
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Cantidad del producto</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              precio
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>precio con impuesto</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Monto total de costo productos</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              clientes_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea clientes</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              productos_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea clientes </td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idcotizaciones
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_cotizaciones_clientes1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      clientes_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_cotizaciones_productos1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      productos_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>CP</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idCP
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria código postal </td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_colonia
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Nombre de la colonia del cliente</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              codigo_postal
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>código postal zona</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              municipio
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre del municipio</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              ciudad
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre de la ciudad</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idCP
+                                          </td>
+                    <td>25</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>departamentos</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              iddepartamentos
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria </td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_departamento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Nombre del área de la empresa</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      iddepartamentos
+                                          </td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>detalle_compras</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id_decompra
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              costo_unitario
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Costo por pieza</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              ordenes_compras_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea de orden de compra</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              categorias_productos_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>llave foránea  categoría producto </td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      id_decompra
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_detalle_compras_ordenes_compras1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      ordenes_compras_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_detalle_compras_categorias_productos1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      categorias_productos_id_fk
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>empleados</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idempleados
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombres
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Nombre empleado</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              apellido_paterno
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Apellido paterno</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              apellido_materno
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Apellido materno</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha_nacimiento
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Fecha de nacimiento por AAAA-MM-DD</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha_alta
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Fecha de contratación</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              departamentos_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>llave foránea departamento</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              sucursales_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea sucursal</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              empresas_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea empresa</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              roles_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea roles de la cuenta</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              CP_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea Código postal</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              paises_idpaises
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea pais</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idempleados
+                                          </td>
+                    <td>8</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_empleados_departamentos_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      departamentos_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_empleados_sucursales1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      sucursales_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_empleados_empresas1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      empresas_id_fk
+                                          </td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_empleados_roles1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      roles_id_fk
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_empleados_CP1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      CP_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_empleados_paises1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      paises_idpaises
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>empresas</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idEmpresas
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre de la empresa</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              razon_social
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Razón social empresa</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idEmpresas
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">idEmpresas_UNIQUE</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idEmpresas
+                                          </td>
+                    <td>0</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>envios_domicilio</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idenvios_domicilio
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              precio
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(5,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Precio envió</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              categorias_envios_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea categoria</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idenvios_domicilio
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_envios_domicilio_categorias_envios1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      categorias_envios_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>estados</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idestados
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              categorias_estado
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Comportamiento activo o inactivo</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idestados
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>fabricantes</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idfabricantes
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_fabricante
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre del fabricante</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idfabricantes
+                                          </td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>inventarios</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idinventarios
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              productos_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea  producto</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idinventarios
+                                          </td>
+                    <td>9</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_inventarios_productos1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      productos_id_fk
+                                          </td>
+                    <td>9</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>notas_credito</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idnotas_credito
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              concepto
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Tipificación del movimiento devolución etc</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>monto total</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              orden_servicios_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea orden servicio</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              clientes_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea cliente</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idnotas_credito
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_notas_credito_orden_servicios1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      orden_servicios_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_notas_credito_clientes1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      clientes_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>ordenes_compras</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idordenes_compras
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria </td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Fecha compra AAAA-MM-DD</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Concepto
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Tipificación de la compra</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              cantidad
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Cantidad del producto</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Total costo</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              productos_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave foránea producto</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idordenes_compras
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_ordenes_compras_productos1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      productos_id_fk
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>orden_servicios</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              id_servicio
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              cantidad
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(9,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              clientes_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              productos_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              envios_domicilio_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      id_servicio
+                                          </td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_orden_servicios_clientes1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      clientes_id_fk
+                                          </td>
+                    <td>8</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_orden_servicios_productos1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      productos_id_fk
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_orden_servicios_envios_domicilio1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      envios_domicilio_id_fk
+                                          </td>
+                    <td>2</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>paises</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idpaises
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_pais
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Abreviatura ISO 3166-1 alfa-3, sistema de códigos tres letras.
+ </td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idpaises
+                                          </td>
+                    <td>12</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>productos</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idproductos
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_producto
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              precio
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              existencia
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              categorias_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              estados_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fabricantes_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              proveedores_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idproductos
+                                          </td>
+                    <td>9</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_productos_categorias_productos1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      categorias_id_fk
+                                          </td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_productos_estados1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      estados_id_fk
+                                          </td>
+                    <td>1</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_productos_fabricantes1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      fabricantes_id_fk
+                                          </td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_productos_proveedores1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      proveedores_id_fk
+                                          </td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>proveedores</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idproveedores
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_empresa
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre de la empresa</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_ejecutivo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Nombre del contacto</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              telefono
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>telefono</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              correo
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>email ejecutivo</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idproveedores
+                                          </td>
+                    <td>10</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>roles</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idroles
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_rol
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idroles
+                                          </td>
+                    <td>6</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>sucursales</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+        <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idsucursales
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Llave primaria</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_surcusal
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>nombre sucursal</td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idsucursales
+                                          </td>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>ventas</h2>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+
+          <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idventas
+                              <em>(Primaria)</em>
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              tipo
+                          </td>
+            <td lang="en" dir="ltr">
+              enum('venta', 'devolucion')
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              orden_servicios_id_fk
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <h3>Índices</h3>
+
+        <div class="responsivetable jsresponsive">
+          <table class="pma-table" id="table_index">
+              <table class="table table-striped">
+                  <thead class="thead-dark">
+            <thead>
+              <tr>
+                <th>Nombre de la clave</th>
+                <th>Tipo</th>
+                <th>Único</th>
+                <th>Empaquetado</th>
+                <th>Columna</th>
+                <th>Cardinalidad</th>
+                <th>Cotejamiento</th>
+                <th>Nulo</th>
+                <th>Comentario</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                                              <tr>
+                  <td rowspan="1">PRIMARY</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">Sí</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      idventas
+                                          </td>
+                    <td>7</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                                                <tr>
+                  <td rowspan="1">fk_ventas_orden_servicios1_idx</td>
+                  <td rowspan="1">BTREE</td>
+                  <td rowspan="1">No</td>
+                  <td rowspan="1">No</td>
+
+                                                          <td>
+                      orden_servicios_id_fk
+                                          </td>
+                    <td>7</td>
+                    <td>A</td>
+                    <td>No</td>
+
+                                          <td rowspan="1"></td>
+                                    </tr>
+                                            </tbody>
+          </table>
+        </div>
+          </div>
+      <div>
+      <h2>vw_detalle_compras</h2>
+              <p>Comentarios de la tabla: <em>VIEW</em></p>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+
+          <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              date
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Fecha compra AAAA-MM-DD</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              idordenes_compras
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td>Llave primaria </td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_categoria
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Tipificación de la categoria </td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_producto
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              varchar(45)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              cantidad
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Cantidad del producto</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              costo_unitario
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Costo por pieza</td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(7,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td>Total costo</td>
+                      </tr>
+              </tbody></table>
+
+              <p>¡No se ha definido ningún índice!</p>
+          </div>
+      <div>
+      <h2>vw_pedidos_por_anio</h2>
+              <p>Comentarios de la tabla: <em>VIEW</em></p>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+
+          <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(9,2)
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              num pedidos
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              bigint
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              2020
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(23,0)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              2021
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              decimal(23,0)
+            </td>
+            <td>Sí</td>
+            <td class="nowrap">
+                              <em>NULL</em>
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <p>¡No se ha definido ningún índice!</p>
+          </div>
+      <div>
+      <h2>vw_stock_productos</h2>
+              <p>Comentarios de la tabla: <em>VIEW</em></p>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+
+          <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              idinventarios
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Producto
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              STOCK
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Fabricante
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              Proveedor
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <p>¡No se ha definido ningún índice!</p>
+          </div>
+      <div>
+      <h2>vw_ventas</h2>
+              <p>Comentarios de la tabla: <em>VIEW</em></p>
+      
+      <table class="pma-table print">
+          <table class="table table-striped">
+              <thead class="thead-dark">
+          <tbody><tr>
+          <th>Columna</th>
+          <th>Tipo</th>
+          <th>Nulo</th>
+          <th>Predeterminado</th>
+                    <th>Comentarios</th>
+                  </tr>
+                  <tr>
+            <td class="nowrap">
+              fecha
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              id_servicio
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              apellido_paterno
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              cantidad
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              nombre_producto
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+                  <tr>
+            <td class="nowrap">
+              total
+                          </td>
+            <td lang="en" dir="ltr" class="nowrap">
+              int
+            </td>
+            <td>No</td>
+            <td class="nowrap">
+                              0
+                          </td>
+                        <td></td>
+                      </tr>
+              </tbody></table>
+
+              <p>¡No se ha definido ningún índice!</p>
+          </div>
+  </div>
+
+<p class="print_ignore">
+  <input type="button" class="btn btn-secondary button" id="print" value="Imprimir">
+</p>
+  </div>
+  <div id="selflink" class="print_ignore"><a href="http://192.168.1.93/phpMyAdmin/index.php?route=%2Fdatabase%2Fdata-dictionary&amp;db=punto_de_venta&amp;server=1" title="Abrir nueva ventana de phpMyAdmin" target="_blank" rel="noopener noreferrer"><img src="./Vista de impresión - phpMyAdmin 5.1.1_files/dot.gif" title="Abrir nueva ventana de phpMyAdmin" alt="Abrir nueva ventana de phpMyAdmin" class="icon ic_window-new"></a></div>
+
+  <div class="clearfloat" id="pma_errors">
+    
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+var debugSQLInfo = 'null';
+
+// ]]>
+</script>
+
+
+  
+  
+  
+
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Proveedores</title>
+</head>
+<body>
+
+<div class="container">
+  <hr>
+
+  <ul class="navbar-nav">
+
+    <li class="nav-item d-none d-sm-inline-block">
+      <ol class="breadcrumb float-sm-right">
+        <li class="breadcrumb-item"><a th:href="@{/agregarProveedor}">Crear</a></li>
+        <li class="breadcrumb-item active">Nuevo proveedor</li>
+      </ol>
+      <a th:href="@{/}" class="nav-link">Home</a>
+
+
+    </li>
+  </ul>
+  <hr>
+  <h3>Lista de proveedores</h3>
+
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#ID</th>
+      <th scope="col">Nombre proveedor</th>
+      <th scope="col">Nombre ejecutivo</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item : ${proveedores}">
+      <td th:text="${item.getIdproveedores()}">Mostrar x</td>
+      <td th:text="${item.getNombreEmpresa()}">Mostrar y</td>
+      <td th:text="${item.getNombreEjecutivo()}">Mostrar z</td>
+      <td th:text="${item.getTelefono()}">Mostrar z</td>
+      <td th:text="${item.getCorre()}">Mostrar z</td>
+
+      <td>
+        <a href="#" class="btn btn-primary btn-xs purple editView" title="Edit" th:href="@{'/editarProveedor/' + ${item.idproveedores}}"><i class="fa fa-edit"></i> Edit</a>
+        <a href="#" class="btn btn-danger btn-xs purple deleteView" title="Delete" th:href="@{'/eliminarProveedor/' + ${item.idproveedores}}"><i class="fa fa-trash-o"></i> Delete</a>
+      </td>
+    </tbody>
+  </table>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

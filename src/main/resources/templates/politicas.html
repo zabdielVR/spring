@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+
+    <title>Polcas y procedimientos</title>
+</head>
+<body>
+<ol class="breadcrumb float-sm-right">
+    <li class="breadcrumb-item"><a th:href="@{/}">Regresar</a></li>
+    <li class="breadcrumb-item active">Home</li>
+</ol>
+
+
+<div class="wrapper center-block">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading active" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Política de respaldo automatizado V1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+
+                    <br>
+                    <h1>I. INFORMACIÓN GENERAL </h1>
+                    <hr>
+                    <p>Sección: Administrativa
+                        Departamento: Tecnologías de información
+                        Área de trabajo: Aplicaciones</p>
+
+                    <p>II. TIPO DE PROCEDIMIENTO: Administrativo.  </p>
+                    <p>III. ACTIVIDAD: Procedimiento de respaldo automatizado</p>
+                    <p>IV. DEFINICIÓN: Este procedimiento tiene como objetivo crear un respaldo automatizado por medio de un script el cual permitirá tener la información al día y tener el menor impacto posible dentro de la operación del modelo de negocio </p>
+                    <p>V.-POLÍTICAS:
+
+                        Esta actividad es automatizada sin embargo debe ser supervisada y ejecutada únicamente por el por Administrador de base de datos.
+                        El respaldo automatizado se realizará a partir de las 00:01 de cada día durante los siete días de la semana</p>
+                    <p>VI. PROCEDIMIENTO:</p>
+                    <p>Respaldo automatizado utilizando CRON todos los viernes de cada semana a las 00:01 hrs.
+
+                    <p>01 * * * * root root/backup.sh
+
+                    <p>crear el archivo bash
+
+                    <p>para crear el archivo
+
+                    <p>touch ./backup.sh
+
+                    <p>para editar el archivo
+
+                    <p>vi backup.sh
+
+                    <p>colocamos el siguiente texto
+
+
+                    <p>#! /bin/bash
+                    <p>#################
+                    <p>#RMC de bnackup
+                    <p>#################
+                    <p> #Destino de la copia de archivos
+                    <p> dest="/root/backup"
+                    <p> #crear nombre de archivo
+                    <p> day=$(date +%A)
+                    <p> dayBD=$(date +%y%m%d)
+                    <p> hostname=$(hostname -s)
+                    <p> back_url=$dest/"$hostname-$day"
+                    <p> #backup de base de datos
+                    <p> echo "Iniciando respaldo"
+                    <p> date
+                    <p> mysqldump --user=root --passwor=Ld3altad22.. --all-databases > $back_url/"rmc-$dayBD.sql"
+                    <p> echo "Finalizo backup de las bases de datos"
+                    <p> sync; echo 3 > /proc/sys/vm/drop_caches</p>
+                    <p>VII. FORMATOS: Control de Cambios</p>
+                    <p>VIII. PARTICIPAN: Administrador de Infraestructura, Coordinador de aplicaciones y administrador de base de datos</p>
+                    <p>IX. AUTORIZADO POR: Dirección Administrativa</p>
+                    <p>X. DOCUMENTOS EN LOS QUE SE MENCIONA ESTA POLÍTICA O PROCEDIMIENTO:</p>
+                    <p>XI. FECHA DE ÚLTIMA ACTUALIZACIÓN: 20 de Abril de 2022</p>
+
+                    <br>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Descripción y proceso de creación de Usuarios y Privilegios V1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+
+
+
+
+                    <h2>I. INFORMACIÓN GENERAL </h2>
+                    <hr>
+
+                    <h2>Sección: Administrativap</h2>
+                    <h2>Departamento: Tecnologías de información</h2>
+                    <p>Área de trabajo: Aplicaciones y desarrollo</p>
+                    <p>II. TIPO DE PROCEDIMIENTO: Administrativo</p>
+                    <p>III. ACTIVIDAD: Proceso de alta y privilegios de usuarios</p>
+                    <p>
+                        IV. DEFINICIÓN: Este procedimiento implementa una jerarquía de permisos conforme a los roles de los usuarios con acceso a la base de datos , esto con el fin de tener duplicidad o perdida de información relevante al negocio</p>
+                    <p></p>
+                    <p> V.-POLÍTICAS:
+
+                        Esta actividad deberá ser ejecutada por el administrador de base de datos ,solo el administrador de base de datos tendrá la jerarquía de permisos globales en todo el entorno DBA , en caso de que se requiera una cuenta con permisos totales esta deberá ser autorizada por el coordinador y director del área ,con el fin de no incurrir en temas legales</p>
+
+                    <p>VI. PROCEDIMIENTO:
+
+                        Este procedimiento deberá realizarse de la consola de administración o desde la terminal con el usuario root</p>
+
+                    <p>Para crear usuarios se deberá ejecutar el siguiente script:</p>
+
+                    <p>CREATE USER 'user_wordpress'@'localhost' IDENTIFIED BY 'Password123#@!'</p>
+
+                    <p>para dar acceso a toda la base de datos deberá ejecutarse el siguiente script :<p>
+
+                    <p>GRANT ALL PRIVILEGES ON wordpress.* TO 'user_wordpress'@'localhost'</p>
+
+
+                    <p>Para dar acceso a las vistas de la base de datos se deberá ejecurar el siguiente script</p>
+
+                    <p>GRANT CREATE VIEW ON tineda_informatica.* TO 'user_tienda'@'localhost'</p>
+                    <p>Para dar acceso solo poder tablas se deberá ejecutar el siguiente script:</p>
+
+                    <p>GRANT SELECT on tineda_informatica.bitacora to user_auditoria@localhost</p>
+                    <P>VII. FORMATOS: Control de Cambios</P>
+                    <p>VIII. PARTICIPAN: Administrador de Infraestructura, Coordinador de aplicaciones y administrador de base de datos</p>
+                    <p> IX. AUTORIZADO POR: Dirección Administrativa </p>
+                    <p>X. DOCUMENTOS EN LOS QUE SE MENCIONA ESTA POLÍTICA O PROCEDIMIENTO:  </p>
+                    <p>XI. FECHA DE ÚLTIMA ACTUALIZACIÓN: 20 de Abril de 2022</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Descripción y proceso de uso de los mecanismos de Bitácora de datos V1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                    <hr>
+
+
+                    <h2>I. INFORMACIÓN GENERAL </h2>
+
+                    <p>Sección: Administrativa  </p>
+                    <p>Departamento: Tecnologías de información	 </p>
+                    <p>Área de trabajo: Aplicaciones y desarrollo</p>
+                    <p>II. TIPO DE PROCEDIMIENTO: Administrativo</p>
+                    <p>III. ACTIVIDAD: Proceso de Bitácora de datos por auditoria</p>
+                    <p>IV. DEFINICIÓN: Este procedimiento permite la integridad de la información, así como el control de cambios dentro de la información en la base de datos, ya que permite auditar los cambios generados por los usuarios así como la prevención de duplicidad y perdida de información</p>
+                    <p>V.-POLÍTICAS:  </p>
+                    <p>Esta actividad requiere ser automatizada por medio del leguaje SQL y Triggers ,ya que en caso de no contar con la tabla de auditoria podrá ser auditado los movimientos de este , esta actividad deberá realizarse en las entidades fuertes y ser autorizada por el director general y por el gerente de auditoría.</p>
+                    <p>VI. PROCEDIMIENTO:  </p>
+                    <p>Se debe crear una tabla Bitacora con las siguientes características:</p>
+                    <p>idbitacora     INT</p>
+                    <p>identidad      INT
+                    <p>fecha            TIMESTAMP
+                    <p>ejecutor         VARCHAR
+                    <p>proceso          VARCHAR
+                    <p>data_actual    VARCHAR
+                    <p>data_anterior  VARCHAR
+
+                    <p>Una vez creada la tabla bitácora seleccionaremos la tabla de la entidad fuerte y dentro de ella crearemos los siguientes TRIGGERS
+                    <p>DELETE
+                    <p>BEGIN
+                    <p>INSERT INTO
+                    <p>bitacora(id_producto,ejecutor,proceso_realizado,data_actual)VALUES(
+                    <p>OLD.id,CURRENT_USER,'Se elimino registro',concat('Informacion anteior: ','Codigo: ',OLD.codigo ,'
+                    <p>Descripcion: ',OLD.descripcion ,'Precio',OLD.precio ,' Producto: ',OLD.fk_proveedor));
+                    <p>
+                    <p>INSERT
+                    <p>BEGIN
+                    <p>bitacora(id_producto,ejecutor,proceso_realizado,data_actual)VALUES(
+                    <p>NEW.id,CURRENT_USER,'Se inserta un nuevo registro',concat('Informacion actual: <p>','Codigo: ',NEW.codigo ,' Descripcion: ',NEW.descripcion ,'Precio',NEW.precio ,' <p>Producto: ',NEW.fk_proveedor));
+
+                    <p>UPDATE
+
+
+                    <p>BEGIN
+
+                    <p>INSERT INTO
+                    <p>bitacora(id_producto,ejecutor,proceso_realizado,data_actual)
+                    <p>VALUES(
+                    <p>OLD.id,
+                    <p>CURRENT_USER,'Se actualizo registro'
+                    <p>,concat
+                    <p> ('Informacion anterior: ',OLD.codigo ,
+                    <p>' Descripcion: ',OLD.descripcion ,
+                    <p>'Precio',OLD.precio ,
+                    <p>' Proveedor: ',OLD.fk_proveedor)
+                    <p>,concat('Informacion nueva: ',' '
+                    <p>  ,NEW.codigo ,' '
+                    <p>,NEW.descripcion ,' '
+                    <p>,NEW.precio ,' '
+                    <p>,NEW.fk_proveedor)
+                    <p>);
+
+                    <p>END
+
+
+                    <p>VII. FORMATOS: Control de Cambios
+
+
+                    <p>VIII. PARTICIPAN: Administrador de Infraestructura, Coordinador de aplicaciones y administrador de base de datos
+
+
+                    <p>IX. AUTORIZADO POR: Dirección Administrativa
+
+
+                    <p>X. DOCUMENTOS EN LOS QUE SE MENCIONA ESTA POLÍTICA O PROCEDIMIENTO:
+
+                    <p>XI. FECHA DE ÚLTIMA ACTUALIZACIÓN: 20 de Abril de 2022
+                    <hr>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Proceso de restauración de Base de Datos V1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+
+                    <hr>
+
+
+
+
+                    <p>I. INFORMACIÓN GENERAL
+
+                    <p>Sección: Administrativa
+                    <p>Departamento: Tecnologías de información
+                    <p>Área de trabajo: Aplicaciones y desarrollo
+
+                    <p>II. TIPO DE PROCEDIMIENTO: Administrativo
+
+
+                    <p>III. ACTIVIDAD: Proceso de restauración
+
+                    <p>IV. DEFINICIÓN: Este procedimiento permite ejecutar la restauración de las bases de datos en caso de <p>contingencia natural, estructural.
+                    <p>Esta restauración busca tener el menor impacto en la continuidad del negocio
+
+
+
+                    <p>V.-POLÍTICAS:
+
+                    <p>Esta actividad solo deberá de ser ejecutada con autorización de la Dirección General  y la Dirección de  <p>Tecnología ,el administrador de base de datos es responsable de proporcionar los últimos respaldos al día <p>anterior del incidente. Este proceso puede tardar en desplegarse en un tiempo menor o igual a las 24 horas
+                    <p>Este procedimiento deberá ser auditado por el área legal
+
+                    <p>VI. PROCEDIMIENTO:
+
+                    <p>Este procedimiento deberá ser realizado por el administrador de base de datos por los siguientes medios:
+
+                    <p>Terminal:
+
+                    <p>Se deberá de ingresar desde la terminal a mysql con el comando mysql -u -usuario -p
+                    <p>Se deberá crear una nueva base de datos con el comando CREATE DATABASE ejemplo;
+                    <p>En una nueva ventana de la terminal se ejecuta el siguiente script:
+                    <p>mysql -h usuario -p -u root nombreBaseNueva< /home/userfolder/ubicacion/baserespaldo.sql
+
+                    <p>Mysql
+
+                    <p>Se deberá de ingresar desde la terminal a mysql con el comando mysql -u -usuario -p
+                    <p>Se deberá crear una nueva base de datos con el comando CREATE DATABASE ejemplo;
+                    <p>Seleccionar la nueva base y ejecutar el siguiente script /home/userfolder/ubicacion/baserespaldo.sql
+
+
+                    <p>Este procedimiento también puede ser realizado desde la interfaz gráfica de mysql workbench y <p>phpmyadmin los cuales permite una integración mas fácil desde el navegador web o consola de <p>administración
+
+
+
+
+                    <p>VIII. PARTICIPAN: Administrador de Infraestructura, Coordinador de aplicaciones y administrador de <p>base de datos
+
+
+                    <p>IX. AUTORIZADO POR: Dirección Administrativa
+
+
+                    <p>X. DOCUMENTOS EN LOS QUE SE MENCIONA ESTA POLÍTICA O PROCEDIMIENTO:
+
+                    <p>XI. FECHA DE ÚLTIMA ACTUALIZACIÓN: 20 de Abril de 2022
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Descripción y proceso de uso de los mecanismos de aseguramiento de la integridad de BD.
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+
+
+                    <hr>
+
+                    <br>
+                    <p>I. INFORMACIÓN GENERAL
+                    <p>Sección: Administrativa
+                    <p>Departamento: Tecnologías de información
+                    <p>Área de trabajo: Aplicaciones y desarrollo
+
+                    <p>II. TIPO DE PROCEDIMIENTO: Administrativo
+
+
+                    <p>III. ACTIVIDAD: Integridad de la base de datos
+
+                    <p>IV. DEFINICIÓN: Este procedimiento permite tener limpieza dentro de las tuplas de información, ya que <p>dentro de la estructura de la tablas y sus relaciones se busca insertar la información necesarios conforme <p>al modelo de negocio
+
+                    <p>V.-POLÍTICAS:
+
+                    <p>Esta actividad deberá planearse desde el modelo abstracto al modelo lógico ,ya que solo deberán existir <p>las tablas que tengan relación y no presentarse tablas sin apuntar a ninguna entidad fuerte.
+
+                    <p>VI. PROCEDIMIENTO:
+
+                    <p>Para este procedimiento debemos los datos y tablas deberán de implementar CASCADE ya que en caso <p>de actualizar o borrar un registro las tablas dependientes puedan realizar el cambio de información sin <p>duplicidad o error en la transacción.
+
+                    <p>En algunas tablas relacionales se deberá de implementar RESTRICT ya que con esto evitaremos que la <p>información sea alterada conforme al modelo de negocio
+
+                    <p>Se deben organizar las tablas por entidades fuertes y débiles ,ya que con esto permitiremos que las tablas <p>dependientes tengan transacciones limpias y organizadas
+
+
+                    <p>VIII. PARTICIPAN: Administrador de Infraestructura, Coordinador de aplicaciones y administrador de <p>base de datos
+
+
+                    <p>IX. AUTORIZADO POR: Dirección Administrativa
+
+
+                    <p>X. DOCUMENTOS EN LOS QUE SE MENCIONA ESTA POLÍTICA O PROCEDIMIENTO:
+
+                    <p>XI. FECHA DE ÚLTIMA ACTUALIZACIÓN: 20 de Abril de 2022                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="com.js"></script>
+
+</body>
+</html>
